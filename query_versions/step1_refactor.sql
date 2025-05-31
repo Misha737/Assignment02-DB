@@ -18,6 +18,12 @@ explain analyze with
 			Eco
         from games
         group by White, ECO
+	),
+	PopularOpenings as (
+	    select ECO
+	    from games
+	    group by ECO
+	    having count(*) > 1000
 	)
 select
     e1.Site,
@@ -37,12 +43,7 @@ select
     ) as AvgOpponentEloInSameOpening
 from
     games e1
-join (
-    select ECO
-    from games
-    group by ECO
-    having count(*) > 1000
-) popular_openings ON e1.ECO = popular_openings.ECO
+join PopularOpenings popular_openings on e1.ECO = popular_openings.ECO
 join WhiteWins e2
 	on e1.White = e2.White
 join UniqueOpponentsWithSameECO e3
