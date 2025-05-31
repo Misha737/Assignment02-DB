@@ -60,7 +60,7 @@ Execution plans:
 
 [Steps 1 and 2](execution_plans/steps_1_2.md)
 
-[Step 3](execution_plans/steps_3.md)
+[Step 3](execution_plans/step_3.md)
 
 Explanations:
 

@@ -60,7 +60,7 @@ join UniqueOpponentsWithSameECO e3
 		e1.ECO = e3.ECO
 ```
 
-![STRAIGHT_JOIN](screenshots/straight_join.png)
+![STRAIGHT_JOIN](../screenshots/straight_join.png)
 
 ## Необхідність та переваги використання hints
 Може бути корисним коли ми знаєм краще, який індекс використовувати, ніж MySQL.
