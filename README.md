@@ -57,10 +57,15 @@ e1.WhiteTitle = 'GM'
 Щоб зменшити кількість повторюваних під запитів, було використано CTE. Також для деяких під запитів було створено індекси.
 
 Execution plans:
+
 [Steps 1 and 2](execution_plans/steps_1_2.md)
+
+[Step 3](execution_plans/steps_3.md)
 
 Explanations:
 
 [Step 1](explanations/step1_explanation.txt)
 
 [Step 2](explanations/step2_explanation.txt)
+
+[Step 3](explanations/step3_explanation.txt)
