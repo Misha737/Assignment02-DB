@@ -25,7 +25,7 @@ SELECT
           AND e3.UTCDate BETWEEN DATE_SUB(e1.UTCDate, INTERVAL 1 YEAR) AND e1.UTCDate
     ) AS AvgOpponentEloInSameOpening,
     (
-        SELECT COUNT(DISTINCT e4.BlackFideId)
+        SELECT COUNT(DISTINCT e4.Black)
         FROM games e4
         WHERE e4.White = e1.White
           AND e4.ECO = e1.ECO
